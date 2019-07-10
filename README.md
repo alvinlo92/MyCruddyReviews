@@ -13,3 +13,17 @@ Create Read Update and Delete framework using JS
  ### Advanced Reqs
 - [ ] update/delete column
 - [ ] button disabling when input values are invalid
+
+## Restaurant Ratings Website
+- Create a form to allow users to write a review
+  - Restuarant Name
+  - Stars
+  - Review
+  - Pictures
+- Resturant page
+  - Average stars
+  - Number of reviews
+  - Price range
+  - Type of food
+  - Address
+- If first review, allow user to input more information

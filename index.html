@@ -11,26 +11,48 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 <body>
-  Restaurant:<br>
-  <input class='name'><br>
-  <div class='rate'>
-    Select your rating<br>
-    <input type='radio' id='star5' name='rate' value='5' />
-    <label for="star5" title="Loved it">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="Liked it">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="It was okay">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="Disliked it">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="Hated it">1 star</label>
+  <div class='admin'>
+    <button id='admin-sign-in'>Admin Sign In</button>
   </div>
-  Review:<br>
-  <textarea class='review' rows='6' cols='60'></textarea><br>
-  <input type="file" name='pic' accept='image/*'><br>
-  <button class='cancel'>Cancel</button>
-  <button class='post'>Post Review</button>
+  <div class='reviewForm'>
+    <div>
+      <div class='restaurantName'>
+        Restaurant: <input id='restaurantName'>
+      </div>
+      <!-- <div class='userName'>
+        User: <input id='userName' title='Leave blank for Anonymous'>
+      </div> -->
+      <div class='ratingContainer'>
+        <div class='userRating'>
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="Loved it"></label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="Liked it"></label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="It was okay"></label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="Disliked it"></label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="Hated it"></label>
+        </div>
+        <div>
+          Select your rating
+        </div>
+      </div>
+      <div class='userReview'>
+        Review:<br>
+        <textarea id='userReview' rows='6' cols='60'></textarea><br>
+      </div>
+      <!-- <div class='userPhotos'>
+        <input type="file" name='pic' accept='image/*'><br>
+      </div> -->
+      <div class='button'>
+        <button id='cancelPost'>Cancel</button>
+        <button id='post'>Post Review</button>
+      </div>
+    </div>
+  </div>
+  <div class='restaurantPage'></div>
   <script src='app/app.js'></script>
 </body>
 </html>

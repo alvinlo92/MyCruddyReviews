@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HREXT10 R00lz!</title>
+  <title>CRUDDY Reviews!</title>
   <script
           src="https://code.jquery.com/jquery-3.3.1.js"
           integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -11,19 +11,22 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 <body>
-  <div class='admin'>
-    <button id='admin-sign-in'>Admin Sign In</button>
-  </div>
-  <div class='reviewForm'>
-    <div>
-      <div class='restaurantName'>
-        Restaurant: <input id='restaurantName'>
+  <header>
+      <div class='title'>
+        CRUDDY Reviews!
       </div>
-      <!-- <div class='userName'>
-        User: <input id='userName' title='Leave blank for Anonymous'>
-      </div> -->
-      <div class='ratingContainer'>
-        <div class='userRating'>
+      <div class='sign-in-container'>
+        <button id='user-button'>User</button>
+        <button id='admin-button'>Admin</button>
+      </div>
+  </header>
+  <div class='review-form-container'>
+    <div id='review-form'>
+      <div class='restaurant-name-container'>
+        Restaurant:<br><input id='restaurant-name'>
+      </div>
+      <div class='ratings-container'>
+        <div class='user-star-rating'>
           <input type="radio" id="star5" name="rate" value="5" />
           <label for="star5" title="Loved it"></label>
           <input type="radio" id="star4" name="rate" value="4" />
@@ -35,24 +38,18 @@
           <input type="radio" id="star1" name="rate" value="1" />
           <label for="star1" title="Hated it"></label>
         </div>
-        <div>
-          Select your rating
-        </div>
+        <div>Select your rating</div>
       </div>
-      <div class='userReview'>
-        Review:<br>
-        <textarea id='userReview' rows='6' cols='60'></textarea><br>
+      <div class='user-review'>
+        Review:<br><textarea id='user-review' rows='6' cols='60'></textarea><br>
       </div>
-      <!-- <div class='userPhotos'>
-        <input type="file" name='pic' accept='image/*'><br>
-      </div> -->
       <div class='button'>
-        <button id='cancelPost'>Cancel</button>
-        <button id='post'>Post Review</button>
+        <button id='cancel-form-post'>Cancel</button>
+        <button id='submit-form-post'>Post Review</button>
       </div>
     </div>
   </div>
-  <div class='restaurantPage'></div>
+  <div class='restaurant-review-page'></div>
   <script src='app/app.js'></script>
 </body>
 </html>

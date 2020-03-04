@@ -1,29 +1,13 @@
-# hrext10-my-cruddy-app
-Create Read Update and Delete framework using JS
+# My Cruddy Reviews
 
- ## Tasks
+A restaurant ratings web application where users can submit their ratings and post their review
 
- ### Basic Reqs
-- [x] Where to store data? (localstorage)
-- [x] How to caputure data? (web form)
-- [x] How to modify data? (update action, delete action)
-- [x] How to view data? (style?)
-- [ ] UI/UX considerations (how are we going to use this)
+![Demo](./demo.gif)
 
- ### Advanced Reqs
-- [ ] update/delete column
-- [ ] button disabling when input values are invalid
+## Requirements
 
-## Restaurant Ratings Website
-- Create a form to allow users to write a review
-  - Restuarant Name
-  - Stars
-  - Review
-  - Pictures
-- Resturant page
-  - Average stars
-  - Number of reviews
-  - Price range
-  - Type of food
-  - Address
-- If first review, allow user to input more information
+No requirements needed, jQuery and Underscore are being run through their CDN
+
+## Launch application
+
+To start the application, open the index.html file onto a brower
